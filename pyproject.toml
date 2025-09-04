@@ -13,6 +13,11 @@ dependencies = [
     "icalendar (>=6.3.1,<7.0.0)"
 ]
 
+[project.scripts]
+hello = "my-python-tools.main:hello"
+
+[tool.poetry]
+packages = [{include = "my-python-tools", from = "src"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
